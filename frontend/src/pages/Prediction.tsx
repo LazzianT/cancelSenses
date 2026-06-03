@@ -41,7 +41,8 @@ export default function Prediction() {
 
     try {
       // Menembak server API backend Python Flask port 5000
-      const response = await fetch('http://localhost:5000/predict', {
+      //const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://cancelsenses-production.up.railway.app/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
