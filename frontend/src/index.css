@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warna Kanvas Terang & Aksen */
+  --color-brand-bg: #EAF0F6;          
+  --color-brand-surface: #EAF0F6;     
+  --color-brand-blue: #2563EB;        
+  --color-brand-orange: #F97316;      
+  --color-brand-text: #1E293B;        
+  --color-brand-muted: #64748B;       
+
+  /* Bayangan Neomorphism Murni (Cembung & Cekung) */
+  --shadow-neo-out: 6px 6px 12px #c8d0da, -6px -6px 12px #ffffff;
+  --shadow-neo-in: inset 4px 4px 8px #c8d0da, inset -4px -4px 8px #ffffff;
+  --shadow-neo-btn: 3px 3px 6px #c8d0da, -3px -3px 6px #ffffff;
+  --shadow-neo-btn-active: inset 2px 2px 5px #c8d0da, inset -2px -2px 5px #ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+@utility neo-card {
+  background: var(--color-brand-surface);
+  box-shadow: var(--shadow-neo-out);
+  border-radius: 1.25rem;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@utility neo-input {
+  background: var(--color-brand-surface);
+  box-shadow: var(--shadow-neo-in);
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Custom Scrollbar Terang */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
