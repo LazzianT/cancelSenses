@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sliders, AlertTriangle, HelpCircle, Loader2, BedDouble, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Sliders, HelpCircle, Loader2, BedDouble, Eye, Sparkles, CheckCircle2 } from 'lucide-react';
 
 export default function Prediction() {
   // Model state form untuk merekam ketikan pengguna secara lokal
