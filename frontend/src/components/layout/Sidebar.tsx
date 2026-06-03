@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { LayoutDashboard, Sliders, BarChart3, ChevronLeft, ChevronRight, ShieldAlert } from 'lucide-react';
+import { LayoutDashboard, Sliders, BarChart3, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface SidebarProps {
   currentTab: string;
